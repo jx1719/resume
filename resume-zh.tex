@@ -1,0 +1,157 @@
+%%
+%% Copyright (c) 2018-2023 Weitian LI
+%% CC BY 4.0 License
+%%
+
+% Chinese version
+\documentclass[zh]{resume}
+
+% Adjust icon size (default: same size as the text)
+\iconsize{\Large}
+
+% File information shown at the footer of the last page
+\fileinfo{%
+  \faCopyright{} 2023, Jiacheng Xu \hspace{0.5em}
+  %\creativecommons{by}{4.0} \hspace{0.5em}
+  %\githublink{account}{repo} \hspace{0.5em}
+  \faEdit{} \today
+}
+
+\name{家诚}{徐}
+
+\keywords{关键词1, 关键词2, ...}
+
+% \tagline{\icon{\faBinoculars}} <position-to-look-for>}
+% \tagline{<current-position>}
+
+% \photo{<height>}{<filename>}
+
+\profile{
+  \mobile{133-7577-8399}
+  \email{1982621513@qq.com}
+  \github{jx1719} \\
+  \university{伦敦帝国理工学院}
+  \degree{数学 \textbullet 硕士}
+  \birthday{2001-07-17}
+  \address{浙江温州}
+  % Custom information:
+  % \icontext{<icon>}{<text>}
+  % \iconlink{<icon>}{<link>}{<text>}
+}
+
+\begin{document}
+\makeheader
+
+%======================================================================
+% Summary & Objectives
+%======================================================================
+{\onehalfspacing\hspace{2em}%
+数学专业（本硕连读）研究生，大四（即研究生）期间主要研究机器学习方向，有扎实的数学与统计学基础，
+擅长数据建模与分析，对神经网络（Neural Networks）和自然语言处理（Natural Language Processing）
+模型有较深的了解。热衷计算机和网络技术，熟练掌握 Python 和 R 语言编程。
+
+\par}
+
+%======================================================================
+\sectionTitle{技能和语言}{\faWrench}
+%======================================================================
+\begin{competences}
+  \comptence{编程}{%
+    Python, R
+  }
+  \comptence{展示工具}{%
+    Microsoft Office, \LaTeX
+  }
+  \comptence{数据分析}{%
+    R, Pandas; Matplotlib, Tensorflow; Keras, Scikit-learn
+  }
+  %\comptence{网站开发}{%
+  %  Flask, JavaScript, jQuery, Bootstrap
+  %}
+  \comptence{\icon{\faLanguage} 语言}{
+    \textbf{英语} --- 雅思平均分8.0， 拥有4年在英国学习生活经验
+  }
+\end{competences}
+
+%======================================================================
+\sectionTitle{教育背景}{\faGraduationCap}
+%======================================================================
+\begin{educations}
+  \education%
+    {2019.10}%
+    [2023.06]%
+    {英国伦敦}%
+    {帝国理工学院}%
+    {数学}%
+    {硕士}
+    
+  \separator{0.5ex}
+  \education%
+    {2009.09}%
+    [2013.06]%
+    {上海}%
+    {光华剑桥国际中心}%
+    {A-level}%
+    {总成绩A*A*A*A*（其中高数取得100\%）}
+\end{educations}
+
+%======================================================================
+\sectionTitle{主要课程}{\faCogs}
+%======================================================================
+\begin{itemize}
+ % \setlength\itemsep{1em}
+  \item 数学 \& 统计相关：
+    应用概率（Applied Probability）；时间序列分析（Time-Series Analysis）；
+    随机模拟（Stochastic Simulation）；生存模型（Survival Models）；
+    最优化（Optimization）；数学生物学（Mathematical Biology）
+  \item 机器学习 \& 计算机相关：
+    编程原理（Principles of Programming）；数据科学分析法（Methods for Data Science）;
+    科学计算（Scientific Computation）；统计学习（Statistical Learning）;
+    机器学习的数学基础（Mathematical Foundations of Machine Learning）
+\end{itemize}
+
+%======================================================================
+\sectionTitle{校内项目}{\faCode}
+%======================================================================
+\begin{itemize}
+  \item \link{https://github.com/jx1719/M2R2}{\texttt{M2R2}}:
+    (\LaTeX)
+    大二期间进行的四人团队项目（Introduction to Manifolds），
+    负责基本定义的解释拓展以及帮助其他组员改善报告的完整性与数学严谨性
+  \item \link{https://github.com/jx1719/Exploration-FASHION-MNIST}{\texttt{Exploration-FMNIST}}:
+    (Python; Keras, Tensorflow)
+    对经典的 Fashion-MNIST dataset 进行监督学习与无监督学习;
+    包括建立卷积神经网络（Convolutional Neural Networks）对图片种类进行预测，
+    对数据集进行PCA分析、群聚分析
+  \item \link{https://colab.research.google.com/drive/1ruyHYsLx8GWJ7rpUdCa_3PLk7ocSHD6d?usp=sharing}{\texttt{cnn-layer}}:
+    (Python; PyTorch)
+    以 CIFAR10 dataset 为研究对象建立卷积神经网络，探索不同的网络结构与正则化方法对模型准确性的影响；
+    以此为基底建立反向运行的 Deepdream 深层模型
+  \item \link{https://github.com/jx1719/suvmodels}{\texttt{surmodels}}:
+    (R)
+    对 kaplan-Meier 生存曲线和 Cox 比例风险模型的基础运用与分析
+  \item \link{https://github.com/jx1719/resume}{\texttt{resume}}:
+    (\LaTeX)
+    \emph{此简历}的模板和源文件
+\end{itemize}
+
+%======================================================================
+
+\sectionTitle{实习经历}{\faBriefcase}
+%======================================================================
+\begin{experiences}
+  \experience%
+    [2021.07]%
+    {2021.09}%
+    {行业销售中心：数据分析师 @ 上海西域供应链}%
+    [\begin{itemize}
+      \item 在与国能、国电投集团合作对接的销售组中担任接线员，
+        帮助客户对其订单状态进行确认，以及对西域商城中商品的定制要求进行确认与对接
+      \item 改善国能销售组的20-21年订单数据库，通过订单的送货地址进行分地域等级划分整理
+        （Microsoft Excel）
+      \item 对20-21年数据库进行地域、公司种类、SKU等不同维度的分析
+    \end{itemize}]
+
+\end{experiences}
+
+\end{document}
